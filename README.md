@@ -34,6 +34,6 @@ Arquivo B | versão 1 | Versão 2
  - git add *
  - git commit -m "mensagen"
  - git push (enviar alterações para o repositório)
- 
+ - git pull (puxar trazer alterações no Github para sua máquina)
  ## GitFlow
  Fluxo do Git
