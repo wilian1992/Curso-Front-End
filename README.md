@@ -29,8 +29,10 @@ Arquivo B | versão 1 | Versão 2
 
 
 ## Commits
-Informação de alteração
+ - Informação de alteração
  - após testado  todo seu código 
+ - git add *
+ - git commit -m "mensagen"
  
  ## GitFlow
  Fluxo do Git
