@@ -33,6 +33,7 @@ Arquivo B | versão 1 | Versão 2
  - após testado  todo seu código 
  - git add *
  - git commit -m "mensagen"
+ - git push (enviar alterações para o repositório)
  
  ## GitFlow
  Fluxo do Git
