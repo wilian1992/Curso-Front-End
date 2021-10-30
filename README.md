@@ -46,5 +46,7 @@ Arquivo B | versão 1 | Versão 2
  - DOO Definition of Done: critérios de aceite
  - versionamento 1.0.0
 
+ - git checkout -b dev (cria uma branch)
+ - git checkout master (mudar uma branch) 
  ### Merge
  Mescla de branchs
