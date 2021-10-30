@@ -37,3 +37,11 @@ Arquivo B | versão 1 | Versão 2
  - git pull (puxar trazer alterações no Github para sua máquina)
  ## GitFlow
  Fluxo do Git
+
+ - ### Branchs
+ são ramificações / versões paralelas
+
+ - main / master (vai para a produção, quando o projeto é publicado)
+ - develop
+ - DOO Definition of Done: critérios de aceite
+ - versionamento 1.0.0
