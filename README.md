@@ -50,3 +50,14 @@ Arquivo B | versão 1 | Versão 2
  - git checkout master (mudar uma branch) 
  ### Merge
  Mescla de branchs
+
+ git merge main
+
+ ### Pull Requests
+ mescla de branchs no reoostorio
+ permite code review
+ O repositorio resolve os conflitos  automaticamente
+
+### configura o Gitflow
+git flow init
+git flow feature start {nome-da-feature}
