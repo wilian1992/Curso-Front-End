@@ -1,4 +1,5 @@
 1. Resolva as operações:
+   
 ● 10 + 15 = 25 (number)
 ● “10” + 2 = 12 (string)
 ● “10” * 2 = 20  (number)
@@ -31,7 +32,7 @@
 ● 10 + 10 * 2 = 30 (number)
 
 
-2. Responda as perguntas de acordo com as variáveis.
+1. Responda as perguntas de acordo com as variáveis.
 var branco = “preto”;
 var preto = “cinza”;
 var cinza = “branco”;
@@ -51,3 +52,4 @@ de 3.000? Demonstre a operação. (36 vezes de 750)
 750
 
 f) Somando as variáveis de cores é formada uma string de quantos caracteres? (3 caracteres)
+
