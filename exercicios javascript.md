@@ -51,5 +51,6 @@ de 3.000? Demonstre a operação. (36 vezes de 750)
 > 27000 / 36
 750
 
+
 f) Somando as variáveis de cores é formada uma string de quantos caracteres? (3 caracteres)
 
