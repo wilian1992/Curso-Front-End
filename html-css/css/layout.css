@@ -17,7 +17,6 @@ html {
 img {
   max-width: 100%;
   height: auto;
-  
 }
 
 body {
@@ -62,19 +61,18 @@ input {
 }
 
 header {
-  background-color: rgb(41, 33, 33);
+  background-color: #333;
   padding: 30px;
-  text-align: center;
+  text-align: left;
   font-size: 35px;
   color: white;
 }
 
 nav {
+  /* background-color: tomato; */
   float: left; /* muda a regra de quebra de linha */
-  width: 20%;
+  width: 30%;
   padding: 20px;
-  border: 3px solid #e1c4d6;
-  background-color: #c3cfce;
 }
 
 nav ul {
@@ -83,6 +81,7 @@ nav ul {
 }
 
 article {
+  /* background-color: yellow; */
   float: left;
   padding: 20px;
   width: 70%;
@@ -100,99 +99,54 @@ footer {
   text-align: center;
   color: white;
 }
-@media (max-width: 600px){
-  nav, article {
-    width: 100%;
-    height: auto;
-  }
-}
 
-.coluna-03 {
-  display: block;
-  float: right;
-  columns: 50px 3;
-  width: 50%;
-  padding: 10px;
-  background-color: rgba(121, 166, 204, 0.582);
- 
-}
-
-.coluna-2 {
-  display: block;
-  float: left;
-}
-
-.coluna-1 {
+.coluna {
   display: block;
   width: 50%;
   float: left;
-  padding: 50px;
-  /*background-color: #eee;
-  border: 1px solid #333;*/    /*colocar borda e cor na borda*/  
+  padding: 5px;
+  /* background: #eee;
+  border: 1px solid #333; */
   
 }
 
-.coluna-0 {
-  float: left;
+.coluna-3 {
+  columns: 100px 2;
   width: 50%;
-  box-sizing: 10px;
-  margin-top: 3%;
-  margin-bottom: 1px;
-  margin-left: ;
 }
 
+.coluna-100w {
+  width: 100%;
+}
 
 iframe {
   width: 100%;
 }
 
 
-/* Mobile first */
+/* Mobile First */
 
-/* tablet */
+
+/* Tablet */
 @media (min-width: 769px) {
-
-   body {
-     background-color: #d2dee1;
-     color: #fff;
-   }
-
-  p, li, a {
-    color: rgb(29, 20, 20);
-  }
-
-  h3 {
-    color: rgb(24, 11, 11);
-  }
+  
+  
 
 }
 
-@media (max-width: 768) {
-  nav {
-    width: 30%;
-  }
-  article {
-    width: 70%;
-  }
-  .coluna {
-    width: 50vw;
-    min-width: unset;
-  }
+@media (max-width: 768px) {
+
+  
+  
 }
 
-/*.coluna-03 {
-  position: absolute; 
-	height: 90px; /* posiciona a 90px para a esquerda */ 
-	top: 0px; /* posiciona a 70px para baixo */
-}
-
+/* Smartphone */
 @media (max-width: 425px){
-     nav,
-     article,
+    nav,
+    article,
     .coluna {
       width: 100%;
       min-width: 320px;
     }
-
 }
 
