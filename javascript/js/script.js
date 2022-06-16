@@ -121,7 +121,7 @@ function validaCampoNumerico(elemento){
 
 }
 
-
+/*validação do campo Email*/
 function validaEmail(elemento){
 
     elemento.addEventListener('focusout', function(event) {
@@ -130,6 +130,30 @@ function validaEmail(elemento){
 
         const emailValido = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+(\.[a-z]+)?/i;
         if(this.value.match(emailValido)) {
+            document.querySelector('.mensagem').innerHTML = "";
+            this.classList.remove('erro');
+            this.parentNode.classList.remove('erro');
+        } else {
+            document.querySelector('.mensagem').innerHTML = "verifique o preenchimento dos campos em destaque";
+            this.classList.add('erro');
+            this.parentNode.classList.add('erro');
+            return false;
+        }
+
+    });
+
+}
+
+
+/*validação do campo UF sigla do estado*/
+function validaUF(elemento){
+
+    elemento.addEventListener('focusout', function(event) {
+
+        event.preventDefault();
+
+        const ufValido = /^[a-z0-2.]+@[a-z0-2]+\.[a-z]+(\.[a-z]+)?$/i;
+        if(this.value.match(ufValido)) {
             document.querySelector('.mensagem').innerHTML = "";
             this.classList.remove('erro');
             this.parentNode.classList.remove('erro');
