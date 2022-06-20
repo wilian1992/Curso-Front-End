@@ -47,12 +47,12 @@
                 <div class="row">
                     <div class="col">
                         <div class="input-group">
-                            <input class="form-control" type="text" name="nome" placeholder="digite seu nome">
+                            <input class="form-control" type="text" name="nome" placeholder="digite seu nome"required>
                         </div>
                     </div>
                     <div class="col">
                         <div class="input-group">
-                            <input class="form-control" type="text" name="email" placeholder="digite seu email">
+                            <input class="form-control" type="text" name="email" placeholder="digite seu email"required>
                         </div>
                     </div>
                 </div>
@@ -60,21 +60,21 @@
                 <div class="row">
                     <div class="col">
                         <label for="endereco" class="col-form-label col-form-label-sm">Endereço completo</label>
-                        <input type="text" id="endereco" class="form-control" placeholder="Endereço completo">
+                        <input type="text" id="endereco" class="form-control" placeholder="Ex: Av, Rua, Travessa, etc..."required>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col">
                         <label for="cidade" class="col-form-label col-form-label-sm">Cidade</label>
-                        <input type="text" name="cidade" id="cidade" class="form-control">
+                        <input type="text" name="cidade" id="cidade"required class="form-control">
                     </div>
 
                     
 
                     <div class="col">
                         <label for="estado" class="col-form-label col-form-label-sm">Estado</label>
-                        <select name="estado" id="estado" class="form-control">
+                        <select name="estado" id="estado"required class="form-control">
                             <option value="">Selecione um estado</option>
                             <option value="RR">RR</option>
                             <option value="AP">AP</option>
@@ -108,7 +108,7 @@
                     </div>
                     <div class="col">
                         <label for="cep" class="col-form-label col-form-label-sm">CEP</label>
-                        <input type="text" name="cep" id="cep" class="form-control">
+                        <input type="text" name="cep" id="cep"required class="form-control" placeholder="00000-000">
                     </div>
                     
                 <div class="row">
@@ -121,7 +121,7 @@
                 <div class="row">
                     <div class="col">
                         <label for="complemento" class="col-form-label col-form-label-sm">Complemento</label>
-                        <input type="text" name="complemento" id="complemento" class="form-control">
+                        <input type="text" name="complemento" id="complemento" class="form-control" placeholder="casa, apartamento, proximo de...">
                     </div>
                 </div>
 
