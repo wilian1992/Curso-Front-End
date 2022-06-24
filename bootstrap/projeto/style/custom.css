@@ -1,7 +1,7 @@
 
 section {
-    padding-bottom: 4rem;
-    padding-top: 4rem;
+    padding-bottom: 0.1rem;
+    padding-top: 0.1rem;
 }
 
 input,
@@ -10,7 +10,17 @@ textarea {
 }
 
 .card {
-    width: 32%;
+    width: 30%;
     float: left;
     margin: 5px;
+}
+ 
+
+/*fiz essa modificação para ficar responsivo porem o menu nao ficou um ao lado do outro na versao mobile*/
+ .col-nav {
+    width: 80%;
+    height: 100px;
+    margin-left: auto; 
+    margin-right: auto;
+    margin-top: auto 50%;
 }
