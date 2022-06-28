@@ -1,287 +1,79 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./style/custom.css">
-    <title>(WP) Bolças e Acessórios</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="./style/custom.css">
+        <title>Bolças e Acessórios</title>
+    </head>
 
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h1>WP Wilian Paiva</h1>
+    <body>
+        <header>
+            <div class="container">
+                <div class="row">
+                    <!-- WE: Wilian e Eliene -->
+                    <p class="logoParte1"><b>WE</b></p>
+                    <p class="logoParte2"><b>Bolsas</b></p>
                 </div>
-                <div class="col">
-                    <ul class="nav justify-content-end">
+                <div class="row">
+                    <ul class="nav my-nav">
                         <li class="nav-item"><a class="nav-link active" href="">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
                         <li class="nav-item"><a class="nav-link" href="#produtos">Produtos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contatos">Contato</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
                         <li class="nav-item"><a class="nav-link" href="./cadastro.html#cadastro">Cadastro</a></li>
                     </ul>
                 </div>
             </div>
-        </div>
-    </header>
+        </header>
 
-    <section>
-        <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active"></li>
-                <li data-bs-target="#carouselId" data-bs-slide-to="1"></li>
-                <li data-bs-target="#carouselId" data-bs-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner" role="listbox">
-                <div class="carousel-item active">
-                    <img src="./images/loja de bolsas frent.jpg" alt="First slide">
-                </div>
-                <div class="carousel-item">
-                    <img src="./images/2loja de bolsas.jpg" alt="Second slide">
-                </div>
-                <div class="carousel-item">
-                    <img src="./images/3loja de bolsas.jpg" alt="Third slide">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-        </div>
-    </section>
-
-    
-    <section id="sobre">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-7 col-sm-12">
-                    <h2>Sobre nós</h2>
-                    <p>somos uma empresa no ramo de bolsas localizada na cidade de Uberlândia no estado de Minas Gerais, fundada em 1 de janeiro de 2022 a (WP) bolsas e acessorios do empresario Wilian paiva vem revolucionando o mercado da moda</p>
-                    <p>com bolsas de varios estilos seja voçe discreta ou estravagante temos bolsas que vai do escritorio a aquela balada em todas as estações, não importa a situação (WP) é a solução.</p>
-                    <!--<a class="btn btn-lg btn-success">Botão</a>-->
-                </div>
-                <div class="col-md-5 col-sm-12">
-                    <img src="./images/loja de bolsas.jpg" alt="Imagem Exemplo" class="img-fluid">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="produtos">
-
-        <div class="container">
-            <div class="row">
-                <div class="col">
-
-                    <h2>Produtos</h2>
-
-                    <div class="card">
-                        <img src="./images/bolsas-carteira/azul celeste carteira porta celular e cartão.jpg" alt="Imagem Exemplo" class="img-fluid">
-                        <div class="card-body">
-                            <h5 class="card-title">Bolsinha Feminina Carteira Porta celular</h5>
-                            <p class="card-text">Carteira Transversal pequena</p>
-                            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-1" >Eu Quero</a>
-                        </div>
+        <section>
+            <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#carouselId" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#carouselId" data-bs-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <img src="./images/loja de bolsas frent.jpg" alt="First slide">
                     </div>
-
-                    <div class="card">
-                        <img src="./images/bolsas-kit/kit-bolsa-rosa.jpg" alt="Imagem Exemplo" class="img-fluid">
-                        <div class="card-body">
-                            <h5 class="card-title">Bolsa Feminina Kit Com 3 Peças</h5>
-                            <p class="card-text">Grande Media + Carteira Luxo</p>
-                            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-2" >Eu Quero</a>
-                        </div>
+                    <div class="carousel-item">
+                        <img src="./images/2loja de bolsas.jpg" alt="Second slide">
                     </div>
-
-                    <div class="card">
-                        <img src="./images/bolsas-verão/1bolsa-pink-verão.jpg" alt="Imagem Exemplo" class="img-fluid">
-                        <div class="card-body">
-                            <h5 class="card-title">Bolsa Praia pink com Alça</h5>
-                            <p class="card-text">Estação Verão</p>
-                            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-3" >Eu Quero</a>
-                        </div>
+                    <div class="carousel-item">
+                        <img src="./images/3loja de bolsas.jpg" alt="Third slide">
                     </div>
-                    
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        
+        <section id="sobre">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 col-sm-12">
+                        <h2>Sobre nós</h2>
+                        <p>somos uma empresa no ramo de bolsas localizada na cidade de Uberlândia no estado de Minas Gerais, fundada em 1 de janeiro de 2022 a (WP) bolsas e acessorios do empresario Wilian paiva vem revolucionando o mercado da moda</p>
+                        <p>com bolsas de varios estilos seja voçe discreta ou estravagante temos bolsas que vai do escritorio a aquela balada em todas as estações, não importa a situação (WP) é a solução.</p>
+                        <tr>
+                            <td><img src="./images/loja de bolsas frent.jpg" alt="Imagem Exemplo" class="img-fluid"></td>
+                        </tr>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-    </section>
-
-
-    <section id="contato">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-sm-12">
-                    <h2>Contato</h2>
-                    <p>Ficou interessada(o)? Preencha os campos do formulário para receber catalogo .</p>
-                </div>
-                <div class="col-md-6 col-sm-12">
-                    <form class="form">
-
-                        <div class="input-group">
-                            <input class="form-control" type="text" name="nome" placeholder="digite seu nome"required>
-                        </div>
-
-                        <div class="input-group">
-                            <input class="form-control" type="text" name="email" placeholder="digite seu email"required>
-                        </div>
-
-                        <div class="input-group">
-                            <textarea  class="form-control" name=""required rows="5"></textarea>
-                        </div>
-
-                        <button type="submit" class="btn btn-lg btn-success">Solicitar </button>
-
-                    </form>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-    <div class="modal fade" id="modal-1">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Carteira porta Celular/Cartão</h5>
-                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <h6>Confira</h6>
-                    <table class="table table-hover table-striped">
-                        <thead>
-                            <tr>
-                                <th>Cor</th>
-                                <th>Valor</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Rosa<img src="./images/bolsas-carteira/carteira porta celular e cartão.jpg" alt="Imagem Exemplo" class="img-fluid"></td>
-                                <td>R$ 59,99</td>
-                            </tr>
-                            <tr>
-                                <td>Preto<img src="./images/bolsas-carteira/carteira porta celular e cartão preto.jpg" alt="Imagem Exemplo" class="img-fluid"></td>
-                                <td>R$ 79,98</td>
-                            </tr>
-                            <tr>
-                                <td>Azul-Celeste<img src="./images/bolsas-carteira/azul celeste carteira porta celular e cartão.jpg" alt="Imagem Exemplo" class="img-fluid"></td>
-                                <td>R$ 59,99</td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Voltar</button>
-                </div>
-            </div>
-        </div>      
-
-    </div>
-
-    <div class="modal fade" id="modal-2">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Bolsa Feminina Kit Com 3 Peças</h5>
-                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <h6>Confira</h6>
-                    <table class="table table-hover table-striped">
-                        <thead>
-                            <tr>
-                                <th>Cor</th>
-                                <th>Valor</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Preto<img src="./images/bolsas-kit/kit-bolsa-preta.jpg" alt="Imagem Exemplo" class="img-fluid"></td>
-                                <td>R$ 199,99</td>
-                            </tr>
-                            <tr>
-                                <td>Rosa<img src="./images/bolsas-kit/kit-bolsa-rosa.jpg" alt="Imagem Exemplo" class="img-fluid"></td>
-                                <td>R$ 199,99</td>
-                            </tr>
-                            <tr>
-                                <td>Creme<img src="./images/bolsas-kit/kit-bolsa-creme.jpg" alt="Imagem Exemplo" class="img-fluid"></td>
-                                <td>R$ 199,99</td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Voltar</button>
-                </div>
-            </div>
-        </div>      
-
-    </div>
-
-    <div class="modal fade" id="modal-3">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Bolsa Feminina Verão</h5>
-                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <h6>Confira</h6>
-                    <table class="table table-hover table-striped">
-                        <thead>
-                            <tr>
-                                <th>Cor</th>
-                                <th>Valor</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Bordô<img src="./images/bolsas-verão/1bolsa-bordô-verão.jpg" alt="Imagem Exemplo" class="img-fluid">
-                                    <img src="./images/bolsas-verão/2bolsa-bordô-verão.jpg" alt="Imagem Exemplo" class="img-fluid">
-                                    <img src="./images/bolsas-verão/3bolsa-bordo-verão.jpg" alt="Imagem Exemplo" class="img-fluid">
-                                    <img src="./images/bolsas-verão/4bolsa-bordô-verão.jpg" alt="Imagem Exemplo" class="img-fluid"></td>
-                                <td>R$ 69,99</td>
-                            </tr>
-                            <tr>
-                                <td>Rosa<img src="./images/bolsas-verão/1bolsa-pink-verão.jpg" alt="Imagem Exemplo" class="img-fluid">
-                                    <img src="./images/bolsas-verão/2bolsa-pink-verão.jpg" alt="Imagem Exemplo" class="img-fluid">
-                                    <img src="./images/bolsas-verão/3bolsa-pink-verão.jpg" alt="Imagem Exemplo" class="img-fluid">
-                                    <img src="./images/bolsas-verão/4bolsa-pink-verão.jpg" alt="Imagem Exemplo" class="img-fluid"></td>
-                                <td>R$ 67,99</td>
-                            </tr>
-                            <tr>
-                                <td>Creme<img src="./images/bolsas-verão/1bolsa-roxo-verão.jpg" alt="Imagem Exemplo" class="img-fluid">
-                                    <img src="./images/bolsas-verão/2bolsa-roxo-verão.jpg" alt="Imagem Exemplo" class="img-fluid">
-                                    <img src="./images/bolsas-verão/3bolsa-roxo-verão.jpg" alt="Imagem Exemplo" class="img-fluid">
-                                    <img src="./images/bolsas-verão/4bolsa-roxo-verão.jpg" alt="Imagem Exemplo" class="img-fluid"></td>
-                                <td>R$ 67,99</td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Voltar</button>
-                </div>
-            </div>
-        </div>      
-
-    </div>
-
-    <script src="./libs/bootstrap/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+        <section id="produtos">
+            <div class="container">
+                <div class="r
