@@ -6,8 +6,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="./libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="./style/custom.css">
-        
-        <link href="./bootstrap/css/bootstrap.js" rel="stylesheet">
         <title>Bolças e Acessórios</title>
     </head>
 
@@ -15,7 +13,6 @@
         <header>
             <div class="container">
                 <div class="row">
-                    <!-- WE: Wilian e Eliene -->
                     <p class="logoParte1"><b>WE</b></p>
                     <p class="logoParte2"><b>Bolsas</b></p>
                 </div>
@@ -30,36 +27,34 @@
                 </div>
             </div>
         </header>
-        
-        <section>
-            <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active"></li>
-                    <li data-bs-target="#carouselId" data-bs-slide-to="1"></li>
-                    <li data-bs-target="#carouselId" data-bs-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner" role="listbox">
-                    <div class="carousel-item active">
-                        <img src="./images/loja de bolsas frent.jpg" alt="First slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./images/2loja de bolsas.jpg" alt="Second slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./images/3loja de bolsas.jpg" alt="Third slide">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
-            </div>
-        </section>
 
+        <div id="carouselExampleIndicators" class="carousel slide mx-4 mb-4" data-bs-ride="true">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./images/loja-bolsas-1.jpg" width="100%" height="500px">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/loja-bolsas-2.jpg" width="100%" height="500px">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/loja-bolsas-3.jpg" width="100%" height="500px">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        
         <section id="sobre">
             <div class="container">
                 <div class="row">
@@ -67,14 +62,9 @@
                         <h2>Sobre nós</h2>
                         <p>somos uma empresa no ramo de bolsas localizada na cidade de Uberlândia no estado de Minas Gerais, fundada em 1 de janeiro de 2022 a (WP) bolsas e acessorios do empresario Wilian paiva vem revolucionando o mercado da moda</p>
                         <p>com bolsas de varios estilos seja voçe discreta ou estravagante temos bolsas que vai do escritorio a aquela balada em todas as estações, não importa a situação (WP) é a solução.</p>
-                        <!--<tr>
-                            <td><img src="./images/loja de bolsas frent.jpg" alt="Imagem Exemplo" class="img-fluid"></td>
-                        </div>
-                         <div class="col-md-5 col-sm-12">
-                            <img src="./images/loja de bolsas.jpg" alt="Imagem Exemplo" class="img-fluid"> 
-                        </div>
-
-                        </tr>-->
+                        <tr>
+                            <td><img src="./images/loja-bolsas-1.jpg" alt="Imagem Exemplo" class="img-fluid"></td>
+                        </tr>
                     </div>
                 </div>
             </div>
@@ -91,7 +81,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Bolsinha Feminina Carteira Porta celular</h5>
                                 <p class="card-text">Transversal pequena</p>
-                                <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-1" >Eu quero</a>
+                                <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-1">Eu quero</a>
                             </div>
                         </div>
 
@@ -100,7 +90,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Bolsa Feminina Kit Com 3 Peças </h5>
                                 <p class="card-text">Grande Media + Carteira Luxo</p>
-                                <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-2">Eu quero</a>
+                            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-2">Eu quero</a>
                             </div>
                         </div>
 
@@ -130,17 +120,11 @@
                             <div class="col-md-6">
                                 <label for="forNome" class="form-label">Informe seu nome</label>
                                 <input class="form-control" type="text" id="forNome" name="nome" placeholder="Nome e Sobrenome" required>
-                                <div class="invalid-feedback">
-                                    Campo obrigatório.
-                                </div>
                             </div>
         
                             <div class="col-md-6">
                                 <label for="forEmail" class="form-label">Informe seu e-mail</label>
                                 <input class="form-control" type="email" id="forEmail" name="email" placeholder="exemplo@email.com" required>
-                                <div class="invalid-feedback">
-                                    Campo obrigatório.
-                                </div>
                             </div>
                         </div>
 
@@ -148,9 +132,6 @@
                             <div class="col-md-12">
                                 <label for="forPedido" class="form-label">Qual seu pedido?</label>
                                 <textarea class="form-control" id="forPedido" name="pedido" rows="5" placeholder="Descreva aqui qual os produtos deseja adquirir." required></textarea>
-                                <div class="invalid-feedback">
-                                    Campo obrigatório.
-                                </div>
                             </div>
                         </div>
 
