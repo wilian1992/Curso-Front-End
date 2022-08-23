@@ -1,4 +1,3 @@
-
 section {
     padding-bottom: 0.1rem;
     padding-top: 0.1rem;
@@ -49,28 +48,19 @@ textarea {
         margin-top: 15px;
         margin-bottom: 20px;
     }
-    
+
     .nav-item {
         height: 27px;
     }
-    
+
     .nav-link {
         height: 25px;
         padding-top: 0px;
         padding-bottom: 0px;
     }
-    
+
     .card {
         width: 90%;
         margin-top: 5px;
-    }
-}
-
-@media(max-width: 770px){
-    .top {
-        justify-content: center;
-    }
-    .nav {
-        justify-content: center;
     }
 }
