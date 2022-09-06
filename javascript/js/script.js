@@ -77,124 +77,134 @@ if(formulario1)
     });
 
 
-/* 
- * Formulário envio de dados para cadastro
- */
-const formulario2 = document.getElementById('formulario-02');
+function validaCampo(elemento){
+    elemento.addEventListener('focusout', function(event) {
+        event.preventDefault();
 
-if(formulario2)
-    formulario2.addEventListener('submit', function( evento ){
-        document.getElementById('mensagem').innerHTML = "Iniciando envio!";
-
-        evento.preventDefault();
-        evento.stopPropagation();
-
-        let camposObrigatorios = document.querySelectorAll('input.obrigatorio');
-        let camposEmail = document.querySelectorAll('input.email');
-        let camposTelefone = document.querySelectorAll('input.telefone');
-        let camposCEP = document.querySelectorAll('input.cep');
-        let camposUF = document.querySelectorAll('input.uf');
-
-        for( let campo of camposObrigatorios) {
-            validaCampoObrigatorio(campo);
-        }
-        
-        if( formulario2.getAttribute('class').match(/erro/) ) {
+        if(this.value == ""){
+            document.querySelector('.mensagem').innerHTML = "verifique o preenchimento dos campos em vermelho";
+            this.classList.add('erro');
+            this.parentNode.classList.add('erro');
+            button.setAttribute("disabled", true);
             return false;
+        } else {
+            document.querySelector('.mensagem').innerHTML = "";
+            this.classList.remove('erro');
+            this.parentNode.classList.remove('erro');
+            button.removeAttribute("disabled");
         }
-
-        for( let campo of camposEmail) {
-            validaEmail(campo);
-        }
-
-        for( let campo of camposTelefone) {
-            validaTelefone(campo);
-        }
-
-        for( let campo of camposCEP) {
-            validaCEP(campo);
-        }
-
-        for( let campo of camposUF) {
-            validaUF(campo);
-        }
-
-        if( formulario2.getAttribute('class').match(/erro/) ) {
-            return false;
-        }
-
-        document.getElementById('mensagem').innerHTML = "Cadastro realizado com sucesso!";
     });
+}
 
-/*validação do campo obrigatorio*/
-function validaCampoObrigatorio(campo){
-    if(campo.value == ""){
-        document.getElementById('mensagem').innerHTML = "Preencha os campos em destaque";
-        campo.classList.add('erro');
-        formulario2.classList.add('erro');
-        return false;
-    } else {
-        document.getElementById('mensagem').innerHTML = "";
-        campo.classList.remove('erro');
-        formulario2.classList.remove('erro');
-    }
+function validaCampoNumerico(elemento){
+    elemento.addEventListener('focusout', function(event) {
+        event.preventDefault();
+
+        let numero = this.value.match(/^[\d]5-[\d]3/) ? this.value.replace(/-/, "") : this.value; 
+        if(numero != "" && numero.match(/[0-9]*/) && numero >= 0 && numero <= 10){
+            document.querySelector('.mensagem').innerHTML = "";
+            this.classList.remove('erro');
+            this.parentNode.classList.remove('erro');
+            button.removeAttribute("disabled");
+        } else {
+            document.querySelector('.mensagem').innerHTML = "verifique o preenchimento dos campos em destaque";
+            this.classList.add('erro');
+            this.parentNode.classList.add('erro');
+            button.setAttribute("disabled", true);
+            return false;
+        }
+
+    });
 }
 
 /*validação do campo Email*/
-function validaEmail(campo){
-    const emailValido = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+(\.[a-z]+)?/i;
-    if(campo.value.match(emailValido)) {
-        document.getElementById('mensagem').innerHTML = "";
-        campo.classList.remove('erro');
-        formulario2.classList.remove('erro');
-    } else {
-        document.getElementById('mensagem').innerHTML = "Preencha o email conforme o exemplo: email@dominio.exemplo";
-        campo.classList.add('erro');
-        formulario2.classList.add('erro');
-        return false;
-    }
-}
+function validaEmail(elemento){
+    elemento.addEventListener('focusout', function(event) {
+        event.preventDefault();
 
-/*validação do campo telefone sigla do estado*/
-function validaTelefone(campo){
-    if(campo.value.match(/\([\d]2\)[\d]5-[\d]4/) || campo.value == ""){
-        document.getElementById('mensagem').innerHTML = "";
-        campo.classList.remove('erro');
-        formulario2.classList.remove('erro');
-    } else {
-        document.getElementById('mensagem').innerHTML = "Preencha o telefone conforme o exemplo: (99)99999-9999";
-        campo.classList.add('erro');
-        formulario2.classList.add('erro');
-        return false;
-    }
-}
-
-/*validação do campo CEP sigla do estado*/
-function validaCEP(campo){
-    let numero = campo.value.match(/[\d]5-[\d]3/) ? campo.value.replace(/-/, "") : campo.value; 
-
-    if((numero != "" && numero.match(/[0-9]*/) && numero >= 0 && numero <= 10) || campo.value == ""){
-        document.getElementById('mensagem').innerHTML = "";
-        campo.classList.remove('erro');
-        formulario2.classList.remove('erro');
-    } else {
-        document.getElementById('mensagem').innerHTML = "Preencha o CEP conforme o exemplo: 99999-999";
-        campo.classList.add('erro');
-        formulario2.classList.add('erro');
-        return false;
-    }
+        const emailValido = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+(\.[a-z]+)?/i;
+        if(this.value.match(emailValido)) {
+            document.querySelector('.mensagem').innerHTML = "";
+            this.classList.remove('erro');
+            this.parentNode.classList.remove('erro');
+            button.removeAttribute("disabled");
+        } else {
+            document.querySelector('.mensagem').innerHTML = "verifique o preenchimento dos campos em destaque";
+            this.classList.add('erro');
+            this.parentNode.classList.add('erro');
+            button.setAttribute("disabled", true);
+            return false;
+        }
+    });
 }
 
 /*validação do campo UF sigla do estado*/
-function validaUF(campo){
-    if(campo.value.match(/[A-Z]2/) || campo.value == ""){
-        document.getElementById('mensagem').innerHTML = "";
-        campo.classList.remove('erro');
-        formulario2.classList.remove('erro');
-    } else {
-        document.getElementById('mensagem').innerHTML = "Preencha a UF conforme o exemplo: MG";
-        campo.classList.add('erro');
-        formulario2.classList.add('erro');
-        return false;
-    }
+function validaUF(elemento){
+    elemento.addEventListener('focusout', function(event) {
+        event.preventDefault();
+
+        const ufValido = /^[A-Z]{2}$/;
+        if(this.value.match(ufValido)) {
+            document.querySelector('.mensagem').innerHTML = "";
+            this.classList.remove('erro');
+            this.parentNode.classList.remove('erro');
+            button.removeAttribute("disabled");
+        } else {
+            document.querySelector('.mensagem').innerHTML = "verifique o preenchimento dos campos em destaque";
+            this.classList.add('erro');
+            this.parentNode.classList.add('erro');
+            button.setAttribute("disabled", true);
+            return false;
+        }
+    });
 }
+
+/*validação do campo CEP*/
+function validaCep(elemento){
+    elemento.addEventListener('focusout', function(event) {
+        event.preventDefault();
+
+        if(this.value.match(/^\d{5}-\d{3}/)){
+            document.querySelector('.mensagem').innerHTML = "";
+            this.classList.remove('erro');
+            this.parentNode.classList.remove('erro');
+            button.removeAttribute("disabled");
+        } else {
+            document.querySelector('.mensagem').innerHTML = "verifique o preenchimento dos campos em destaque";
+            this.classList.add('erro');
+            this.parentNode.classList.add('erro');
+            button.setAttribute("disabled", true);
+            return false;
+        }
+    });
+}
+
+let button = document.querySelector("button");
+button.setAttribute("disabled", true);
+
+let camposObrigatorios = document.querySelectorAll('input.obrigatorio');
+let camposNumericos = document.querySelectorAll('input.numero');
+let camposEmail = document.querySelectorAll('input.email');
+let camposUf = document.querySelectorAll('input.uf');
+let camposCep = document.querySelectorAll('input.cep');
+
+for( let emFoco of camposObrigatorios) {
+    validaCampo(emFoco);
+}
+
+for( let emFoco of camposNumericos) {
+    validaCampoNumerico(emFoco);
+}
+
+for( let emFoco of camposEmail) {
+    validaEmail(emFoco);
+}
+
+for( let emFoco of camposUf) {
+    validaUF(emFoco);
+}
+
+for( let emFoco of camposCep) {
+    validaCep(emFoco);
+}
+
